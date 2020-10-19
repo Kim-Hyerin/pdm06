@@ -21,3 +21,9 @@ st.table(iris_df)
 st.dataframe(iris_df)
  # 텍스트 형태
 st.write(iris_df)
+
+
+#
+st.header("Load diabetes data")
+diabetes_df = pd.read.csv("https://github.com/Redwoods/Py/raw/master/pdm2020/my-note/py-pandas/data/diabetes.csv")
+st.dataframe(diabetes_df)
