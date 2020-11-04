@@ -17,7 +17,7 @@ class_names = ["airplane","automobile","bird","cat","deer","dog","frog","horse",
 st.sidebar.header('CIFAR-10')
 st.sidebar.subheader('Dataset of hand-written digits')
 # Show a random number
-if st.sidebar.checkbox('Show a random image from MNIST'):
+if st.sidebar.checkbox('Show a random image from CIFAR10'):
     num = np.random.randint(0, x_train.shape[0])
     image = x_train[num]
     st.sidebar.image(image, caption=class_names[y_train[num]], width=192)
