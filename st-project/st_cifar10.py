@@ -61,7 +61,7 @@ if st.checkbox('Show 10 different image from the train set'):
     st.pyplot()  # Warning
 
 if st.checkbox('Show 10 different image from the test set'):
-    num_11 = np.unique(y_train, return_index=True)[1]
+    num_11 = np.unique(y_test, return_index=True)[1]
 #     st.write(num_11)
     imageste = x_test[num_11]
     for i in range(len(imageste)):
